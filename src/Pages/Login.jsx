@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { ToastContainer } from 'react-toastify'
+import Doc from './../../public/assets/doc.png'
 
 const Login = () => {
     const [loginCreds, setLoginCreds] = useState({ username: '', password: "" })
@@ -41,7 +42,7 @@ const Login = () => {
     }
     return (
         <div className='flex'>
-            <img src="src/assets/doc.png" alt="" className='hidden md:block w-[50%] h-fit' />
+            <img src={Doc} alt="" className='hidden md:block w-[50%] h-fit' />
             <div className='w-[60%] md:w-[35%] text-center m-auto items-center'>
                 <h1 className='text-4xl font-bold m-4'>Welcome to HealthConnect</h1>
                 <p className='mb-8'>Sign In to access your health care dashboard</p>

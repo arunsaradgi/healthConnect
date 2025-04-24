@@ -2,7 +2,7 @@ import axios from 'axios'
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { toast, ToastContainer } from 'react-toastify'
-
+import Doc from './../../public/assets/doc.png'
 const Register = () => {
     const [formData, setFormData] = useState({ name: '', username: '', email: '', password: "" })
     const [otpscreen, setOtpScreen] = useState(false)
@@ -69,7 +69,7 @@ const Register = () => {
 
     return (
         <div className='flex'>
-            <img src="src/assets/doc.png" alt="" className='hidden md:block w-[50%] h-fit' />
+            <img src={Doc} alt="" className='hidden md:block w-[50%] h-fit' />
             <div className='w-[60%] md:w-[35%] text-center m-auto items-center'>
                 <h1 className='text-4xl font-bold m-4'>Welcome to HealthConnect</h1>
                 {

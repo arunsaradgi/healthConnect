@@ -1,11 +1,12 @@
 import React from 'react'
-
+import About1 from '../../../public/assets/about1.png'
+import About2 from '../../../public/assets/about2.png'
 const AboutUs = () => {
     return (
         <div className='flex p-5 my-20 lg:p-20'>
             <div className='hidden lg:block lg:w-[50%] lg:relative'>
-                <img className='static border-2 border-white rounded-lg ml-[10%] shadow-lg' src="src/assets/about2.png" alt="" />
-                <img className='absolute top-[20%] left-[30%] border-4 border-white rounded-lg shadow-lg' src="src/assets/about1.png" alt="" />
+                <img className='static border-2 border-white rounded-lg ml-[10%] shadow-lg' src={About2} alt="" />
+                <img className='absolute top-[20%] left-[30%] border-4 border-white rounded-lg shadow-lg' src={About1} alt="" />
             </div>
             <div className='text-center lg:w-[50%] lg:text-left'>
                 <p className='text-red-500 font-semibold text-sm uppercase mb-2'>Welcome to Health Connect</p>

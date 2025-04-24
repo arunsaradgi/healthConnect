@@ -2,7 +2,7 @@ import axios from 'axios'
 import React from 'react'
 import { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
-
+import Contact from './../../public/assets/contact.jpg'
 const ContactUs = () => {
 
     const [formData, setFormData] = useState({ name: "", email: '', subject: '', message: '' })
@@ -35,7 +35,7 @@ const ContactUs = () => {
             <h1 className='text-3xl font-bold mb-4'>Get in Touch</h1>
             <p className='text-gray-700'>Have questions or need assistance? Fill out the form, and our team will get back to you shortly.</p>
             <div className='md:flex flex-col text-center lg:flex-row'>
-                <img src="src/assets/contact.jpg" alt="" className='w-[80%]  lg:w-[50%] m-auto' />
+                <img src={Contact} alt="" className='w-[80%]  lg:w-[50%] m-auto' />
                 <form action="" className='w-[70%] flex flex-col lg:w-[50%] gap-4 m-auto items-center' onSubmit={handleFormSubmit}>
                     <input className='w-[100%]  border lg:w-[70%] h-12 p-4 rounded-lg  border-gray-500' placeholder='Your Name' type="text" name='name' value={formData.name} onChange={handleInputChange} />
                     <input className='w-[100%]  border lg:w-[70%] h-12 p-4 rounded-lg  border-gray-500' placeholder='Your Email' type="text" name='email' value={formData.email} onChange={handleInputChange} />
