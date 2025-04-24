@@ -1,5 +1,5 @@
 import React from 'react'
-
+import bannerImage from '../../../public/assets/banner.png'
 const Banner = () => {
     return (
         <div className='lg:flex mt-28'>
@@ -17,7 +17,7 @@ const Banner = () => {
                 <button className='px-6 py-3 bg-red-500 text-white mt-16 font-semibold rounded-md text-2xl hover:bg-red-600 transition duration-300'>Register Now</button>
             </div>
             <div className='lg:w-[50%]'>
-                <img src="src/assets/banner.png" className='scale-90 transition duration-500 hover:scale-100 ' alt="banner image" />
+                <img src={bannerImage} className='scale-90 transition duration-500 hover:scale-100 ' alt="banner image" />
             </div>
         </div>
     )
